@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D06831FE18E916AD00995416 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06831FD18E916AD00995416 /* Parse.framework */; };
+		D068320818E916EE00995416 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06831FF18E916EE00995416 /* AudioToolbox.framework */; };
+		D068320918E916EE00995416 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320018E916EE00995416 /* CFNetwork.framework */; };
+		D068320A18E916EE00995416 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320118E916EE00995416 /* CoreLocation.framework */; };
+		D068320B18E916EE00995416 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320218E916EE00995416 /* libz.dylib */; };
+		D068320C18E916EE00995416 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320318E916EE00995416 /* MobileCoreServices.framework */; };
+		D068320D18E916EE00995416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320418E916EE00995416 /* QuartzCore.framework */; };
+		D068320E18E916EE00995416 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320518E916EE00995416 /* Security.framework */; };
+		D068320F18E916EE00995416 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320618E916EE00995416 /* StoreKit.framework */; };
+		D068321018E916EE00995416 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320718E916EE00995416 /* SystemConfiguration.framework */; };
+		D09A634618E8BADD007B75E9 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09A634518E8BADD007B75E9 /* Crashlytics.framework */; };
 		D0B4F04018D7F7DD000AE962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4F03F18D7F7DD000AE962 /* Foundation.framework */; };
 		D0B4F04218D7F7DD000AE962 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4F04118D7F7DD000AE962 /* CoreGraphics.framework */; };
 		D0B4F04418D7F7DD000AE962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4F04318D7F7DD000AE962 /* UIKit.framework */; };
@@ -14,8 +25,6 @@
 		D0B4F04C18D7F7DD000AE962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B4F04B18D7F7DD000AE962 /* main.m */; };
 		D0B4F05018D7F7DD000AE962 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B4F04F18D7F7DD000AE962 /* DDAppDelegate.m */; };
 		D0B4F05318D7F7DD000AE962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B4F05118D7F7DD000AE962 /* Main.storyboard */; };
-		D0B4F05618D7F7DD000AE962 /* DDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B4F05518D7F7DD000AE962 /* DDFirstViewController.m */; };
-		D0B4F05918D7F7DD000AE962 /* DDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B4F05818D7F7DD000AE962 /* DDSecondViewController.m */; };
 		D0B4F05B18D7F7DD000AE962 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B4F05A18D7F7DD000AE962 /* Images.xcassets */; };
 		D0B4F06218D7F7DD000AE962 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4F06118D7F7DD000AE962 /* XCTest.framework */; };
 		D0B4F06318D7F7DD000AE962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4F03F18D7F7DD000AE962 /* Foundation.framework */; };
@@ -35,25 +44,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D0B4F03C18D7F7DD000AE962 /* DORMSdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DORMSdb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06831FD18E916AD00995416 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D06831FF18E916EE00995416 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D068320018E916EE00995416 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D068320118E916EE00995416 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D068320218E916EE00995416 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D068320318E916EE00995416 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D068320418E916EE00995416 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D068320518E916EE00995416 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D068320618E916EE00995416 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D068320718E916EE00995416 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D09A634518E8BADD007B75E9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		D0B4F03C18D7F7DD000AE962 /* DORMSDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DORMSDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B4F03F18D7F7DD000AE962 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0B4F04118D7F7DD000AE962 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D0B4F04318D7F7DD000AE962 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D0B4F04718D7F7DD000AE962 /* DORMSdb-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DORMSdb-Info.plist"; sourceTree = "<group>"; };
+		D0B4F04718D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DORMSDB.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
 		D0B4F04918D7F7DD000AE962 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0B4F04B18D7F7DD000AE962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D0B4F04D18D7F7DD000AE962 /* DORMSdb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DORMSdb-Prefix.pch"; sourceTree = "<group>"; };
+		D0B4F04D18D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DORMSDB.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		D0B4F04E18D7F7DD000AE962 /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
 		D0B4F04F18D7F7DD000AE962 /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
 		D0B4F05218D7F7DD000AE962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D0B4F05418D7F7DD000AE962 /* DDFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDFirstViewController.h; sourceTree = "<group>"; };
-		D0B4F05518D7F7DD000AE962 /* DDFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDFirstViewController.m; sourceTree = "<group>"; };
-		D0B4F05718D7F7DD000AE962 /* DDSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSecondViewController.h; sourceTree = "<group>"; };
-		D0B4F05818D7F7DD000AE962 /* DDSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSecondViewController.m; sourceTree = "<group>"; };
 		D0B4F05A18D7F7DD000AE962 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D0B4F06018D7F7DD000AE962 /* DORMSdbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DORMSdbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B4F06018D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DORMSDB.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B4F06118D7F7DD000AE962 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D0B4F06918D7F7DD000AE962 /* DORMSdbTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DORMSdbTests-Info.plist"; sourceTree = "<group>"; };
+		D0B4F06918D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DORMSDB.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
 		D0B4F06B18D7F7DD000AE962 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0B4F06D18D7F7DD000AE962 /* DORMSdbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORMSdbTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,8 +79,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D068320818E916EE00995416 /* AudioToolbox.framework in Frameworks */,
+				D068320918E916EE00995416 /* CFNetwork.framework in Frameworks */,
+				D068320A18E916EE00995416 /* CoreLocation.framework in Frameworks */,
+				D068320B18E916EE00995416 /* libz.dylib in Frameworks */,
+				D068320C18E916EE00995416 /* MobileCoreServices.framework in Frameworks */,
+				D068320D18E916EE00995416 /* QuartzCore.framework in Frameworks */,
+				D068320E18E916EE00995416 /* Security.framework in Frameworks */,
+				D068320F18E916EE00995416 /* StoreKit.framework in Frameworks */,
+				D068321018E916EE00995416 /* SystemConfiguration.framework in Frameworks */,
 				D0B4F04218D7F7DD000AE962 /* CoreGraphics.framework in Frameworks */,
+				D06831FE18E916AD00995416 /* Parse.framework in Frameworks */,
 				D0B4F04418D7F7DD000AE962 /* UIKit.framework in Frameworks */,
+				D09A634618E8BADD007B75E9 /* Crashlytics.framework in Frameworks */,
 				D0B4F04018D7F7DD000AE962 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,8 +122,8 @@
 		D0B4F03D18D7F7DD000AE962 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0B4F03C18D7F7DD000AE962 /* DORMSdb.app */,
-				D0B4F06018D7F7DD000AE962 /* DORMSdbTests.xctest */,
+				D0B4F03C18D7F7DD000AE962 /* DORMSDB.app */,
+				D0B4F06018D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +131,17 @@
 		D0B4F03E18D7F7DD000AE962 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D06831FF18E916EE00995416 /* AudioToolbox.framework */,
+				D068320018E916EE00995416 /* CFNetwork.framework */,
+				D068320118E916EE00995416 /* CoreLocation.framework */,
+				D068320218E916EE00995416 /* libz.dylib */,
+				D068320318E916EE00995416 /* MobileCoreServices.framework */,
+				D068320418E916EE00995416 /* QuartzCore.framework */,
+				D068320518E916EE00995416 /* Security.framework */,
+				D068320618E916EE00995416 /* StoreKit.framework */,
+				D068320718E916EE00995416 /* SystemConfiguration.framework */,
+				D06831FD18E916AD00995416 /* Parse.framework */,
+				D09A634518E8BADD007B75E9 /* Crashlytics.framework */,
 				D0B4F03F18D7F7DD000AE962 /* Foundation.framework */,
 				D0B4F04118D7F7DD000AE962 /* CoreGraphics.framework */,
 				D0B4F04318D7F7DD000AE962 /* UIKit.framework */,
@@ -115,13 +153,7 @@
 		D0B4F04518D7F7DD000AE962 /* DORMSdb */ = {
 			isa = PBXGroup;
 			children = (
-				D0B4F04E18D7F7DD000AE962 /* DDAppDelegate.h */,
-				D0B4F04F18D7F7DD000AE962 /* DDAppDelegate.m */,
 				D0B4F05118D7F7DD000AE962 /* Main.storyboard */,
-				D0B4F05418D7F7DD000AE962 /* DDFirstViewController.h */,
-				D0B4F05518D7F7DD000AE962 /* DDFirstViewController.m */,
-				D0B4F05718D7F7DD000AE962 /* DDSecondViewController.h */,
-				D0B4F05818D7F7DD000AE962 /* DDSecondViewController.m */,
 				D0B4F05A18D7F7DD000AE962 /* Images.xcassets */,
 				D0B4F04618D7F7DD000AE962 /* Supporting Files */,
 			);
@@ -131,10 +163,12 @@
 		D0B4F04618D7F7DD000AE962 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0B4F04718D7F7DD000AE962 /* DORMSdb-Info.plist */,
+				D0B4F04E18D7F7DD000AE962 /* DDAppDelegate.h */,
+				D0B4F04F18D7F7DD000AE962 /* DDAppDelegate.m */,
+				D0B4F04718D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_rename-Info.plist */,
 				D0B4F04818D7F7DD000AE962 /* InfoPlist.strings */,
 				D0B4F04B18D7F7DD000AE962 /* main.m */,
-				D0B4F04D18D7F7DD000AE962 /* DORMSdb-Prefix.pch */,
+				D0B4F04D18D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_rename-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,7 +185,7 @@
 		D0B4F06818D7F7DD000AE962 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0B4F06918D7F7DD000AE962 /* DORMSdbTests-Info.plist */,
+				D0B4F06918D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_renameTests-Info.plist */,
 				D0B4F06A18D7F7DD000AE962 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -160,26 +194,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0B4F03B18D7F7DD000AE962 /* DORMSdb */ = {
+		D0B4F03B18D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0B4F07118D7F7DD000AE962 /* Build configuration list for PBXNativeTarget "DORMSdb" */;
+			buildConfigurationList = D0B4F07118D7F7DD000AE962 /* Build configuration list for PBXNativeTarget "DORMSDB.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				D0B4F03818D7F7DD000AE962 /* Sources */,
 				D0B4F03918D7F7DD000AE962 /* Frameworks */,
 				D0B4F03A18D7F7DD000AE962 /* Resources */,
+				D09A634018E8B924007B75E9 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DORMSdb;
+			name = DORMSDB.temp_caseinsensitive_rename;
 			productName = DORMSdb;
-			productReference = D0B4F03C18D7F7DD000AE962 /* DORMSdb.app */;
+			productReference = D0B4F03C18D7F7DD000AE962 /* DORMSDB.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D0B4F05F18D7F7DD000AE962 /* DORMSdbTests */ = {
+		D0B4F05F18D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0B4F07418D7F7DD000AE962 /* Build configuration list for PBXNativeTarget "DORMSdbTests" */;
+			buildConfigurationList = D0B4F07418D7F7DD000AE962 /* Build configuration list for PBXNativeTarget "DORMSDB.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				D0B4F05C18D7F7DD000AE962 /* Sources */,
 				D0B4F05D18D7F7DD000AE962 /* Frameworks */,
@@ -190,9 +225,9 @@
 			dependencies = (
 				D0B4F06618D7F7DD000AE962 /* PBXTargetDependency */,
 			);
-			name = DORMSdbTests;
+			name = DORMSDB.temp_caseinsensitive_renameTests;
 			productName = DORMSdbTests;
-			productReference = D0B4F06018D7F7DD000AE962 /* DORMSdbTests.xctest */;
+			productReference = D0B4F06018D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -205,12 +240,15 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alex Mitchell";
 				TargetAttributes = {
+					D0B4F03B18D7F7DD000AE962 = {
+						DevelopmentTeam = H69TS4DPUJ;
+					};
 					D0B4F05F18D7F7DD000AE962 = {
 						TestTargetID = D0B4F03B18D7F7DD000AE962;
 					};
 				};
 			};
-			buildConfigurationList = D0B4F03718D7F7DD000AE962 /* Build configuration list for PBXProject "DORMSdb" */;
+			buildConfigurationList = D0B4F03718D7F7DD000AE962 /* Build configuration list for PBXProject "DORMSDB" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,8 +261,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0B4F03B18D7F7DD000AE962 /* DORMSdb */,
-				D0B4F05F18D7F7DD000AE962 /* DORMSdbTests */,
+				D0B4F03B18D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_rename */,
+				D0B4F05F18D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,14 +288,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D09A634018E8B924007B75E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run b7a2a503d3dffcb4aa1898c4a0bbe7472f4cfa2a fdde5c14daeae87e3064e91cf0f254fc35ae402c4153983b179af77f9c0ea801";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0B4F03818D7F7DD000AE962 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B4F05618D7F7DD000AE962 /* DDFirstViewController.m in Sources */,
 				D0B4F05018D7F7DD000AE962 /* DDAppDelegate.m in Sources */,
-				D0B4F05918D7F7DD000AE962 /* DDSecondViewController.m in Sources */,
 				D0B4F04C18D7F7DD000AE962 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +327,7 @@
 /* Begin PBXTargetDependency section */
 		D0B4F06618D7F7DD000AE962 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D0B4F03B18D7F7DD000AE962 /* DORMSdb */;
+			target = D0B4F03B18D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_rename */;
 			targetProxy = D0B4F06518D7F7DD000AE962 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -383,10 +435,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DORMSdb/DORMSdb-Prefix.pch";
-				INFOPLIST_FILE = "DORMSdb/DORMSdb-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "DORMSdb/DORMSDB.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "DORMSdb/DORMSDB.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = DORMSDB;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -396,10 +453,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DORMSdb/DORMSdb-Prefix.pch";
-				INFOPLIST_FILE = "DORMSdb/DORMSdb-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "DORMSdb/DORMSDB.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "DORMSdb/DORMSDB.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = DORMSDB;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -419,8 +481,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DORMSdbTests/DORMSdbTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DORMSdbTests/DORMSDB.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = DORMSDB.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -437,8 +499,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DORMSdb/DORMSdb-Prefix.pch";
-				INFOPLIST_FILE = "DORMSdbTests/DORMSdbTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DORMSdbTests/DORMSDB.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = DORMSDB.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -447,7 +509,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0B4F03718D7F7DD000AE962 /* Build configuration list for PBXProject "DORMSdb" */ = {
+		D0B4F03718D7F7DD000AE962 /* Build configuration list for PBXProject "DORMSDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0B4F06F18D7F7DD000AE962 /* Debug */,
@@ -456,21 +518,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0B4F07118D7F7DD000AE962 /* Build configuration list for PBXNativeTarget "DORMSdb" */ = {
+		D0B4F07118D7F7DD000AE962 /* Build configuration list for PBXNativeTarget "DORMSDB.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0B4F07218D7F7DD000AE962 /* Debug */,
 				D0B4F07318D7F7DD000AE962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D0B4F07418D7F7DD000AE962 /* Build configuration list for PBXNativeTarget "DORMSdbTests" */ = {
+		D0B4F07418D7F7DD000AE962 /* Build configuration list for PBXNativeTarget "DORMSDB.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0B4F07518D7F7DD000AE962 /* Debug */,
 				D0B4F07618D7F7DD000AE962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
