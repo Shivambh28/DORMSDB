@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D067926218F1C381006C2EB0 /* DDResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D067926118F1C381006C2EB0 /* DDResultsTableViewCell.m */; };
 		D06831FE18E916AD00995416 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06831FD18E916AD00995416 /* Parse.framework */; };
 		D068320818E916EE00995416 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06831FF18E916EE00995416 /* AudioToolbox.framework */; };
 		D068320918E916EE00995416 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320018E916EE00995416 /* CFNetwork.framework */; };
@@ -15,9 +16,19 @@
 		D068320C18E916EE00995416 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320318E916EE00995416 /* MobileCoreServices.framework */; };
 		D068320D18E916EE00995416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320418E916EE00995416 /* QuartzCore.framework */; };
 		D068320E18E916EE00995416 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320518E916EE00995416 /* Security.framework */; };
-		D068320F18E916EE00995416 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320618E916EE00995416 /* StoreKit.framework */; };
 		D068321018E916EE00995416 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068320718E916EE00995416 /* SystemConfiguration.framework */; };
+		D068321618E917F800995416 /* DDMyRoomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D068321518E917F800995416 /* DDMyRoomsTableViewController.m */; };
+		D068321918E9180B00995416 /* DDResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D068321818E9180B00995416 /* DDResultsTableViewController.m */; };
+		D068321C18E9185100995416 /* DDLogonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D068321B18E9185100995416 /* DDLogonViewController.m */; };
+		D068321F18E9186000995416 /* DDRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D068321E18E9186000995416 /* DDRoomViewController.m */; };
+		D068322118E9256400995416 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068322018E9256400995416 /* FacebookSDK.framework */; };
+		D07B1C4918ED0B4D00176BF5 /* DDSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07B1C4818ED0B4D00176BF5 /* DDSearchTableViewController.m */; };
+		D07D555B18FCE7100008CE56 /* DDAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = D07D555A18FCE7100008CE56 /* DDAPICall.m */; };
 		D09A634618E8BADD007B75E9 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09A634518E8BADD007B75E9 /* Crashlytics.framework */; };
+		D0A06CD818EE47780020C27E /* DDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A06CD718EE47780020C27E /* DDObject.m */; };
+		D0A9B22618EA4AC700394598 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B22518EA4AC700394598 /* SWRevealViewController.m */; };
+		D0A9B22918EA4D0D00394598 /* DDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B22818EA4D0D00394598 /* DDTabBarController.m */; };
+		D0A9B22C18EA4E2600394598 /* DDSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B22B18EA4E2600394598 /* DDSettingsViewController.m */; };
 		D0B4F04018D7F7DD000AE962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4F03F18D7F7DD000AE962 /* Foundation.framework */; };
 		D0B4F04218D7F7DD000AE962 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4F04118D7F7DD000AE962 /* CoreGraphics.framework */; };
 		D0B4F04418D7F7DD000AE962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4F04318D7F7DD000AE962 /* UIKit.framework */; };
@@ -44,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D067926018F1C381006C2EB0 /* DDResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDResultsTableViewCell.h; sourceTree = "<group>"; };
+		D067926118F1C381006C2EB0 /* DDResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDResultsTableViewCell.m; sourceTree = "<group>"; };
 		D06831FD18E916AD00995416 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D06831FF18E916EE00995416 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D068320018E916EE00995416 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -52,9 +65,29 @@
 		D068320318E916EE00995416 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D068320418E916EE00995416 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D068320518E916EE00995416 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D068320618E916EE00995416 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D068320718E916EE00995416 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D068321418E917F800995416 /* DDMyRoomsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMyRoomsTableViewController.h; sourceTree = "<group>"; };
+		D068321518E917F800995416 /* DDMyRoomsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMyRoomsTableViewController.m; sourceTree = "<group>"; };
+		D068321718E9180B00995416 /* DDResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDResultsTableViewController.h; sourceTree = "<group>"; };
+		D068321818E9180B00995416 /* DDResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDResultsTableViewController.m; sourceTree = "<group>"; };
+		D068321A18E9185100995416 /* DDLogonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogonViewController.h; sourceTree = "<group>"; };
+		D068321B18E9185100995416 /* DDLogonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogonViewController.m; sourceTree = "<group>"; };
+		D068321D18E9186000995416 /* DDRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRoomViewController.h; sourceTree = "<group>"; };
+		D068321E18E9186000995416 /* DDRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRoomViewController.m; sourceTree = "<group>"; };
+		D068322018E9256400995416 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		D07B1C4718ED0B4D00176BF5 /* DDSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSearchTableViewController.h; sourceTree = "<group>"; };
+		D07B1C4818ED0B4D00176BF5 /* DDSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSearchTableViewController.m; sourceTree = "<group>"; };
+		D07D555918FCE7100008CE56 /* DDAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAPICall.h; sourceTree = "<group>"; };
+		D07D555A18FCE7100008CE56 /* DDAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAPICall.m; sourceTree = "<group>"; };
 		D09A634518E8BADD007B75E9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		D0A06CD618EE47780020C27E /* DDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDObject.h; sourceTree = "<group>"; };
+		D0A06CD718EE47780020C27E /* DDObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDObject.m; sourceTree = "<group>"; };
+		D0A9B22418EA4AC700394598 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		D0A9B22518EA4AC700394598 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D0A9B22718EA4D0D00394598 /* DDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTabBarController.h; sourceTree = "<group>"; };
+		D0A9B22818EA4D0D00394598 /* DDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTabBarController.m; sourceTree = "<group>"; };
+		D0A9B22A18EA4E2600394598 /* DDSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSettingsViewController.h; sourceTree = "<group>"; };
+		D0A9B22B18EA4E2600394598 /* DDSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSettingsViewController.m; sourceTree = "<group>"; };
 		D0B4F03C18D7F7DD000AE962 /* DORMSDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DORMSDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B4F03F18D7F7DD000AE962 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0B4F04118D7F7DD000AE962 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D068322118E9256400995416 /* FacebookSDK.framework in Frameworks */,
 				D068320818E916EE00995416 /* AudioToolbox.framework in Frameworks */,
 				D068320918E916EE00995416 /* CFNetwork.framework in Frameworks */,
 				D068320A18E916EE00995416 /* CoreLocation.framework in Frameworks */,
@@ -86,7 +120,6 @@
 				D068320C18E916EE00995416 /* MobileCoreServices.framework in Frameworks */,
 				D068320D18E916EE00995416 /* QuartzCore.framework in Frameworks */,
 				D068320E18E916EE00995416 /* Security.framework in Frameworks */,
-				D068320F18E916EE00995416 /* StoreKit.framework in Frameworks */,
 				D068321018E916EE00995416 /* SystemConfiguration.framework in Frameworks */,
 				D0B4F04218D7F7DD000AE962 /* CoreGraphics.framework in Frameworks */,
 				D06831FE18E916AD00995416 /* Parse.framework in Frameworks */,
@@ -109,6 +142,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D01AAF4318EE12740022CEDF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D068321418E917F800995416 /* DDMyRoomsTableViewController.h */,
+				D07B1C4718ED0B4D00176BF5 /* DDSearchTableViewController.h */,
+				D07B1C4818ED0B4D00176BF5 /* DDSearchTableViewController.m */,
+				D068321518E917F800995416 /* DDMyRoomsTableViewController.m */,
+				D0A9B22A18EA4E2600394598 /* DDSettingsViewController.h */,
+				D0A9B22B18EA4E2600394598 /* DDSettingsViewController.m */,
+				D0A9B22718EA4D0D00394598 /* DDTabBarController.h */,
+				D0A9B22818EA4D0D00394598 /* DDTabBarController.m */,
+				D068321D18E9186000995416 /* DDRoomViewController.h */,
+				D068321E18E9186000995416 /* DDRoomViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		D0B4F03318D7F7DD000AE962 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +181,7 @@
 		D0B4F03E18D7F7DD000AE962 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D068322018E9256400995416 /* FacebookSDK.framework */,
 				D06831FF18E916EE00995416 /* AudioToolbox.framework */,
 				D068320018E916EE00995416 /* CFNetwork.framework */,
 				D068320118E916EE00995416 /* CoreLocation.framework */,
@@ -138,7 +189,6 @@
 				D068320318E916EE00995416 /* MobileCoreServices.framework */,
 				D068320418E916EE00995416 /* QuartzCore.framework */,
 				D068320518E916EE00995416 /* Security.framework */,
-				D068320618E916EE00995416 /* StoreKit.framework */,
 				D068320718E916EE00995416 /* SystemConfiguration.framework */,
 				D06831FD18E916AD00995416 /* Parse.framework */,
 				D09A634518E8BADD007B75E9 /* Crashlytics.framework */,
@@ -153,7 +203,18 @@
 		D0B4F04518D7F7DD000AE962 /* DORMSdb */ = {
 			isa = PBXGroup;
 			children = (
+				D01AAF4318EE12740022CEDF /* ViewControllers */,
 				D0B4F05118D7F7DD000AE962 /* Main.storyboard */,
+				D068321718E9180B00995416 /* DDResultsTableViewController.h */,
+				D068321818E9180B00995416 /* DDResultsTableViewController.m */,
+				D07D555918FCE7100008CE56 /* DDAPICall.h */,
+				D07D555A18FCE7100008CE56 /* DDAPICall.m */,
+				D067926018F1C381006C2EB0 /* DDResultsTableViewCell.h */,
+				D067926118F1C381006C2EB0 /* DDResultsTableViewCell.m */,
+				D068321A18E9185100995416 /* DDLogonViewController.h */,
+				D068321B18E9185100995416 /* DDLogonViewController.m */,
+				D0A06CD618EE47780020C27E /* DDObject.h */,
+				D0A06CD718EE47780020C27E /* DDObject.m */,
 				D0B4F05A18D7F7DD000AE962 /* Images.xcassets */,
 				D0B4F04618D7F7DD000AE962 /* Supporting Files */,
 			);
@@ -163,6 +224,8 @@
 		D0B4F04618D7F7DD000AE962 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0A9B22418EA4AC700394598 /* SWRevealViewController.h */,
+				D0A9B22518EA4AC700394598 /* SWRevealViewController.m */,
 				D0B4F04E18D7F7DD000AE962 /* DDAppDelegate.h */,
 				D0B4F04F18D7F7DD000AE962 /* DDAppDelegate.m */,
 				D0B4F04718D7F7DD000AE962 /* DORMSDB.temp_caseinsensitive_rename-Info.plist */,
@@ -242,6 +305,14 @@
 				TargetAttributes = {
 					D0B4F03B18D7F7DD000AE962 = {
 						DevelopmentTeam = H69TS4DPUJ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					D0B4F05F18D7F7DD000AE962 = {
 						TestTargetID = D0B4F03B18D7F7DD000AE962;
@@ -310,6 +381,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B4F05018D7F7DD000AE962 /* DDAppDelegate.m in Sources */,
+				D068321C18E9185100995416 /* DDLogonViewController.m in Sources */,
+				D0A06CD818EE47780020C27E /* DDObject.m in Sources */,
+				D0A9B22C18EA4E2600394598 /* DDSettingsViewController.m in Sources */,
+				D067926218F1C381006C2EB0 /* DDResultsTableViewCell.m in Sources */,
+				D07B1C4918ED0B4D00176BF5 /* DDSearchTableViewController.m in Sources */,
+				D0A9B22618EA4AC700394598 /* SWRevealViewController.m in Sources */,
+				D0A9B22918EA4D0D00394598 /* DDTabBarController.m in Sources */,
+				D068321618E917F800995416 /* DDMyRoomsTableViewController.m in Sources */,
+				D068321F18E9186000995416 /* DDRoomViewController.m in Sources */,
+				D07D555B18FCE7100008CE56 /* DDAPICall.m in Sources */,
+				D068321918E9180B00995416 /* DDResultsTableViewController.m in Sources */,
 				D0B4F04C18D7F7DD000AE962 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +458,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lea Marolt (H69TS4DPUJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lea Marolt (H69TS4DPUJ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -394,6 +477,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "36329D87-A661-46F9-A997-C7204BB99CA1";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -414,7 +498,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lea Marolt (H69TS4DPUJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lea Marolt (H69TS4DPUJ)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -425,6 +510,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "36329D87-A661-46F9-A997-C7204BB99CA1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -436,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -444,6 +531,7 @@
 				GCC_PREFIX_HEADER = "DORMSdb/DORMSDB.temp_caseinsensitive_rename-Prefix.pch";
 				INFOPLIST_FILE = "DORMSdb/DORMSDB.temp_caseinsensitive_rename-Info.plist";
 				PRODUCT_NAME = DORMSDB;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -454,6 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -462,6 +551,7 @@
 				GCC_PREFIX_HEADER = "DORMSdb/DORMSDB.temp_caseinsensitive_rename-Prefix.pch";
 				INFOPLIST_FILE = "DORMSdb/DORMSDB.temp_caseinsensitive_rename-Info.plist";
 				PRODUCT_NAME = DORMSDB;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
