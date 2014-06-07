@@ -1,0 +1,19 @@
+{
+  "name": "DORMSDB",
+  "version": "0.0.0",
+  "description": "A web service designed to deliver up-to-date dorm room information",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "../"
+  },
+  "keywords": [
+    "DORMSDB"
+  ],
+  "author": "Alex Mitchell",
+  "license": "ISC"
+}
