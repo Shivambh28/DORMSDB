@@ -1,6 +1,6 @@
 // routes.js
 
-Module.exports = function(app, Parse) {
+module.exports = function(app, Parse) {
 
   /* PAGES */
 

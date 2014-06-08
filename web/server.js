@@ -21,7 +21,6 @@ var auth = require('./auth.js');
 
 Parse.initialize(auth["parse-appid"], auth["parse-key"]);
 
-
 // configuration
 
 app.use(morgan('dev'));
@@ -30,7 +29,7 @@ app.use(bodyParser());
 app.use(expressSession({secret: auth["session-secret"]}));
 
 // Use routes
-var routes = (./routes.js)(app, Parse);
+var routes = require ("./routes.js")(app, Parse);
 
 // launch
 
