@@ -1,6 +1,7 @@
 // server.js
 
 // Setup
+
 var express = require('express');
 var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -25,7 +26,9 @@ Parse.initialize(auth["parse-appid"], auth["parse-key"]);
 
 app.use(morgan('dev'));
 app.use(cookieParser());
-app.use(bodyParser());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(expressSession({secret: auth["session-secret"]}));
 
 // Use routes
@@ -34,4 +37,4 @@ var routes = require ("./routes.js")(app, Parse);
 // launch
 
 app.listen(port);
-console.log("Operating on port" + port);
+console.log("Operating on port " + port);
