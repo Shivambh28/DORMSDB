@@ -32,4 +32,27 @@ app.post('/enter', function(req,res){
   });
 });
 
+app.get('/signup', function(req, res){
+  res.redirect('/signup.html');
+});
+
+app.post('/signup', function(req, res){
+
+  Parse.Cloud.run("makeUser", {
+    forename: req.body.forename,
+    surname: req.body.surname,
+    email: req.body.email,
+    password: req.body.password,
+    username: req.body.username
+  }, {
+    success: function(result){
+      res.redirect("/login");
+    },
+    error: function(error){
+      res.end("Error: " + error);
+    }
+  });
+});
+
+
 app.listen();
