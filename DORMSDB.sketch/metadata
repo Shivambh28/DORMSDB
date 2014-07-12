@@ -13,9 +13,10 @@
 		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Medium</string>
 		<string>HelveticaNeue-Light</string>
+		<string>OpenSans-Bold</string>
 	</array>
 	<key>length</key>
-	<integer>524868</integer>
+	<integer>705398</integer>
 	<key>version</key>
 	<integer>37</integer>
 </dict>
