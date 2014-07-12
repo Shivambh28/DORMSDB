@@ -54,5 +54,17 @@ app.post('/signup', function(req, res){
   });
 });
 
+app.get("/test", function(req, res){
+  Parse.Cloud.run("getRoom", {
+    campus: "North"
+  }, {
+    success: function(result){
+      res.end("" + result );
+    },
+    error: function(error){
+      res.end("error");
+    }
+  });
+});
 
 app.listen();
