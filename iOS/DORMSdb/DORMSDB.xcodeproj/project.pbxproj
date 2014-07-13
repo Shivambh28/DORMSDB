@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14E8472053664CA3BA9E3588 /* libPods-DORMSDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA8279554344C319B8766B3 /* libPods-DORMSDB.a */; };
 		D025B19A1971F00C00AFB45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025B1991971F00C00AFB45B /* AppDelegate.swift */; };
 		D025B19F1971F00C00AFB45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D025B19D1971F00C00AFB45B /* Main.storyboard */; };
 		D025B1A11971F00C00AFB45B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D025B1A01971F00C00AFB45B /* Images.xcassets */; };
 		D025B1AD1971F00C00AFB45B /* DORMSDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025B1AC1971F00C00AFB45B /* DORMSDBTests.swift */; };
-		D025B1B81971F13600AFB45B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D025B1B61971F13600AFB45B /* Crashlytics.framework */; };
-		D025B1B91971F13600AFB45B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D025B1B71971F13600AFB45B /* Parse.framework */; };
 		D025B1C21971FA2500AFB45B /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025B1C11971FA2500AFB45B /* resultsViewController.swift */; };
+		F7A811D5EA9645D8AB9D6556 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBB6B9803A545709A442EAA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FBB6B9803A545709A442EAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59899276CEDB451CB8368648 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		CA0B0A46E7884BFE802E8CE4 /* Pods-DORMSDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DORMSDB.xcconfig"; path = "Pods/Pods-DORMSDB.xcconfig"; sourceTree = "<group>"; };
 		D025B1941971F00C00AFB45B /* DORMSDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DORMSDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D025B1981971F00C00AFB45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D025B1991971F00C00AFB45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,9 +38,9 @@
 		D025B1A61971F00C00AFB45B /* DORMSDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DORMSDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D025B1AB1971F00C00AFB45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D025B1AC1971F00C00AFB45B /* DORMSDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DORMSDBTests.swift; sourceTree = "<group>"; };
-		D025B1B61971F13600AFB45B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
-		D025B1B71971F13600AFB45B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
-		D025B1C11971FA2500AFB45B /* resultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
+		D025B1C11971FA2500AFB45B /* resultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resultsViewController.swift; path = ../resultsViewController.swift; sourceTree = "<group>"; };
+		D03DD6781972F1EB00357178 /* Dependency-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Dependency-Bridging-Header.h"; path = "../Dependency-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEA8279554344C319B8766B3 /* libPods-DORMSDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DORMSDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D025B1B81971F13600AFB45B /* Crashlytics.framework in Frameworks */,
-				D025B1B91971F13600AFB45B /* Parse.framework in Frameworks */,
+				14E8472053664CA3BA9E3588 /* libPods-DORMSDB.a in Frameworks */,
+				F7A811D5EA9645D8AB9D6556 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,15 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E81F37F3A114771A41412C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEA8279554344C319B8766B3 /* libPods-DORMSDB.a */,
+				4FBB6B9803A545709A442EAA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D025B18B1971F00C00AFB45B = {
 			isa = PBXGroup;
 			children = (
-				D025B1C11971FA2500AFB45B /* resultsViewController.swift */,
-				D025B1B61971F13600AFB45B /* Crashlytics.framework */,
-				D025B1B71971F13600AFB45B /* Parse.framework */,
 				D025B1961971F00C00AFB45B /* DORMSDB */,
 				D025B1A91971F00C00AFB45B /* DORMSDBTests */,
 				D025B1951971F00C00AFB45B /* Products */,
+				CA0B0A46E7884BFE802E8CE4 /* Pods-DORMSDB.xcconfig */,
+				8E81F37F3A114771A41412C9 /* Frameworks */,
+				59899276CEDB451CB8368648 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,9 +96,9 @@
 		D025B1961971F00C00AFB45B /* DORMSDB */ = {
 			isa = PBXGroup;
 			children = (
+				D025B1C11971FA2500AFB45B /* resultsViewController.swift */,
 				D025B1991971F00C00AFB45B /* AppDelegate.swift */,
 				D025B19D1971F00C00AFB45B /* Main.storyboard */,
-				D025B1A01971F00C00AFB45B /* Images.xcassets */,
 				D025B1971971F00C00AFB45B /* Supporting Files */,
 			);
 			path = DORMSDB;
@@ -95,6 +107,8 @@
 		D025B1971971F00C00AFB45B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D025B1A01971F00C00AFB45B /* Images.xcassets */,
+				D03DD6781972F1EB00357178 /* Dependency-Bridging-Header.h */,
 				D025B1981971F00C00AFB45B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -124,10 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D025B1B01971F00C00AFB45B /* Build configuration list for PBXNativeTarget "DORMSDB" */;
 			buildPhases = (
+				513E83D4F11746D68D51FFB9 /* Check Pods Manifest.lock */,
 				D025B1901971F00C00AFB45B /* Sources */,
 				D025B1911971F00C00AFB45B /* Frameworks */,
 				D025B1921971F00C00AFB45B /* Resources */,
 				D025B1BA1971F21C00AFB45B /* ShellScript */,
+				B6F12658C06147699FE4945B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +229,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		513E83D4F11746D68D51FFB9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6F12658C06147699FE4945B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D025B1BA1971F21C00AFB45B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,6 +393,7 @@
 		};
 		D025B1B11971F00C00AFB45B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59899276CEDB451CB8368648 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -357,11 +404,13 @@
 				INFOPLIST_FILE = DORMSDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dependency-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		D025B1B21971F00C00AFB45B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59899276CEDB451CB8368648 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -372,6 +421,7 @@
 				INFOPLIST_FILE = DORMSDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dependency-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -430,6 +480,7 @@
 				D025B1B21971F00C00AFB45B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D025B1B31971F00C00AFB45B /* Build configuration list for PBXNativeTarget "DORMSDBTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +489,7 @@
 				D025B1B51971F00C00AFB45B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

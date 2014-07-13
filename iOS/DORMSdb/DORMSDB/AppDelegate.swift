@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-        
-        //[Crashlytics startWithAPIKey:@"b7a2a503d3dffcb4aa1898c4a0bbe7472f4cfa2a"];
+        let crashlytics = Crashlytics()
+        Crashlytics.startWithAPIKey("b7a2a503d3dffcb4aa1898c4a0bbe7472f4cfa2a")
         println("Hello World")
         return true
     }
