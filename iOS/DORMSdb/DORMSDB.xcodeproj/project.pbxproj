@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D025B19A1971F00C00AFB45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025B1991971F00C00AFB45B /* AppDelegate.swift */; };
-		D025B19C1971F00C00AFB45B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025B19B1971F00C00AFB45B /* ViewController.swift */; };
 		D025B19F1971F00C00AFB45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D025B19D1971F00C00AFB45B /* Main.storyboard */; };
 		D025B1A11971F00C00AFB45B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D025B1A01971F00C00AFB45B /* Images.xcassets */; };
 		D025B1AD1971F00C00AFB45B /* DORMSDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025B1AC1971F00C00AFB45B /* DORMSDBTests.swift */; };
+		D025B1B81971F13600AFB45B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D025B1B61971F13600AFB45B /* Crashlytics.framework */; };
+		D025B1B91971F13600AFB45B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D025B1B71971F13600AFB45B /* Parse.framework */; };
+		D025B1C21971FA2500AFB45B /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025B1C11971FA2500AFB45B /* resultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +30,14 @@
 		D025B1941971F00C00AFB45B /* DORMSDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DORMSDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D025B1981971F00C00AFB45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D025B1991971F00C00AFB45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D025B19B1971F00C00AFB45B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D025B19E1971F00C00AFB45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D025B1A01971F00C00AFB45B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D025B1A61971F00C00AFB45B /* DORMSDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DORMSDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D025B1AB1971F00C00AFB45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D025B1AC1971F00C00AFB45B /* DORMSDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DORMSDBTests.swift; sourceTree = "<group>"; };
+		D025B1B61971F13600AFB45B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
+		D025B1B71971F13600AFB45B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
+		D025B1C11971FA2500AFB45B /* resultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D025B1B81971F13600AFB45B /* Crashlytics.framework in Frameworks */,
+				D025B1B91971F13600AFB45B /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,9 @@
 		D025B18B1971F00C00AFB45B = {
 			isa = PBXGroup;
 			children = (
+				D025B1C11971FA2500AFB45B /* resultsViewController.swift */,
+				D025B1B61971F13600AFB45B /* Crashlytics.framework */,
+				D025B1B71971F13600AFB45B /* Parse.framework */,
 				D025B1961971F00C00AFB45B /* DORMSDB */,
 				D025B1A91971F00C00AFB45B /* DORMSDBTests */,
 				D025B1951971F00C00AFB45B /* Products */,
@@ -76,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				D025B1991971F00C00AFB45B /* AppDelegate.swift */,
-				D025B19B1971F00C00AFB45B /* ViewController.swift */,
 				D025B19D1971F00C00AFB45B /* Main.storyboard */,
 				D025B1A01971F00C00AFB45B /* Images.xcassets */,
 				D025B1971971F00C00AFB45B /* Supporting Files */,
@@ -119,6 +127,7 @@
 				D025B1901971F00C00AFB45B /* Sources */,
 				D025B1911971F00C00AFB45B /* Frameworks */,
 				D025B1921971F00C00AFB45B /* Resources */,
+				D025B1BA1971F21C00AFB45B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,13 +212,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D025B1BA1971F21C00AFB45B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run b7a2a503d3dffcb4aa1898c4a0bbe7472f4cfa2a fdde5c14daeae87e3064e91cf0f254fc35ae402c4153983b179af77f9c0ea801";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D025B1901971F00C00AFB45B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D025B19C1971F00C00AFB45B /* ViewController.swift in Sources */,
 				D025B19A1971F00C00AFB45B /* AppDelegate.swift in Sources */,
+				D025B1C21971FA2500AFB45B /* resultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +350,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alexmitchell/Development/DORMSDB/iOS,
+				);
 				INFOPLIST_FILE = DORMSDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +365,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alexmitchell/Development/DORMSDB/iOS,
+				);
 				INFOPLIST_FILE = DORMSDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
