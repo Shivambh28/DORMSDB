@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14E8472053664CA3BA9E3588 /* libPods-DORMSDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA8279554344C319B8766B3 /* libPods-DORMSDB.a */; };
 		D025B19A1971F00C00AFB45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025B1991971F00C00AFB45B /* AppDelegate.swift */; };
 		D025B19F1971F00C00AFB45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D025B19D1971F00C00AFB45B /* Main.storyboard */; };
 		D025B1A11971F00C00AFB45B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D025B1A01971F00C00AFB45B /* Images.xcassets */; };
@@ -48,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E8472053664CA3BA9E3588 /* libPods-DORMSDB.a in Frameworks */,
 				F7A811D5EA9645D8AB9D6556 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,19 +1,19 @@
 PODS:
-  - Bolts (1.1.0)
-  - CrashlyticsFramework (2.2.1)
-  - Facebook-iOS-SDK (3.15.1):
+  - Bolts (1.1.2)
+  - CrashlyticsFramework (2.2.2)
+  - Facebook-iOS-SDK (3.17.0):
     - Bolts
-  - Parse (1.2.19):
-    - Facebook-iOS-SDK (~> 3.11)
+  - Parse (1.2.21):
+    - Facebook-iOS-SDK (~> 3.17)
 
 DEPENDENCIES:
   - CrashlyticsFramework (~> 2.2)
   - Parse (~> 1.2)
 
 SPEC CHECKSUMS:
-  Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
-  CrashlyticsFramework: a9d172599c3a34e68067e16446a764041b980162
-  Facebook-iOS-SDK: 56214af8e0ef16e751eb2804250326b709e571b8
-  Parse: ffebaecaddd32cb52671010f81567c298ff93d04
+  Bolts: 2635e8698a630774689441047f3465d78c48d485
+  CrashlyticsFramework: bce4c0e83b50f22aafde946b41a34a6b8ca7acd0
+  Facebook-iOS-SDK: f20274d809f112ba540842e2b6cbe50128d51b7b
+  Parse: 4be4e9fe2ee6dae16010e7622a5641a7c89154b7
 
 COCOAPODS: 0.33.1
