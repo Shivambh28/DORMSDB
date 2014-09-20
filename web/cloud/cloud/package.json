@@ -4,6 +4,8 @@
   "description": "A complete framework for dormitory management",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.8.3",
+    "express": "^4.9.4",
     "parse": "^1.2.19"
   },
   "devDependencies": {},
