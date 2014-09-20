@@ -113,4 +113,55 @@ app.get('/user/logout', function(req, res){
     loggedIn: false
   })
 });
+
+app.get('/search', function(req, res){
+  res.sendFile(__dirname + '/public/search.html');
+});
+
+app.post('/search', function(req, res){
+  // show rooms based on the user request
+  var room = parse.Object.extend('Room');
+  var hall = parse.Object.extend('Hall');
+  var campus = parse.Object.extend('Campus');
+  var cluster = parse.Object.extend('Cluster');
+  var floor = parse.Object.extend('Floor');
+  var house = parse.Object.extend('House');
+
+  var roomQuery = new parse.Query(room);
+  var hallQuery = new parse.Query(hall);
+  var campusQuery = new parse.Query(campus);
+  var clusterQuery = new parse.Query(cluster);
+  var floorQuery = new parse.Query(floor);
+  var houseQuery = new parse.Query(house);
+
+
+  var acCheck = laundryCheck = printerCheck = subsCheck = false;
+  var hallList = [];
+  if(req.body.ac == "checked"){
+    hallList.push("AC");
+    acCheck = true;
+  }
+  if(req.body.laundry == "checked"){
+    hallList.push("Laundry");
+    laundryCheck = true;
+  }
+  if(req.body.printer == "checked"){
+    hallList.push("Printer");
+    printerCheck = true;
+  }
+  if(req.body.subfree == "checked"){
+    hallList.push("SubstanceFree");
+    subsCheck = true;
+  }
+  hallQuery.containsAll("specialAttributes", hallList);
+  hallQuery.find({
+    success: function(halls){
+      res.json(halls);
+    }
+  })
+});
+
+
+
+
 app.listen(port);
