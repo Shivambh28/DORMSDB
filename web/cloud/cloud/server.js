@@ -137,28 +137,39 @@ app.post('/search', function(req, res){
 
   var acCheck = laundryCheck = printerCheck = subsCheck = false;
   var hallList = [];
-  if(req.body.ac == "checked"){
-    hallList.push("AC");
-    acCheck = true;
-  }
-  if(req.body.laundry == "checked"){
-    hallList.push("Laundry");
-    laundryCheck = true;
-  }
-  if(req.body.printer == "checked"){
-    hallList.push("Printer");
-    printerCheck = true;
-  }
-  if(req.body.subfree == "checked"){
-    hallList.push("SubstanceFree");
-    subsCheck = true;
-  }
-  hallQuery.containsAll("specialAttributes", hallList);
-  hallQuery.find({
-    success: function(halls){
-      res.json(halls);
+  if(req.body.room!=""){
+    console.log("searching based on room #", req.body.room);
+    roomQuery.equalTo("number", req.body.room);
+    roomQuery.find({
+      success: function(rooms){
+        console.log(rooms);
+        res.json(rooms);
+      }
+    });
+  }else {
+    if(req.body.ac == "checked"){
+      hallList.push("AC");
+      acCheck = true;
     }
-  })
+    if(req.body.laundry == "checked"){
+      hallList.push("Laundry");
+      laundryCheck = true;
+    }
+    if(req.body.printer == "checked"){
+      hallList.push("Printer");
+      printerCheck = true;
+    }
+    if(req.body.subfree == "checked"){
+      hallList.push("SubstanceFree");
+      subsCheck = true;
+    }
+    hallQuery.containsAll("specialAttributes", hallList);
+    hallQuery.find({
+      success: function(halls){
+        res.json(halls);
+      }
+    });
+  }
 });
 
 
