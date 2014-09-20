@@ -20,25 +20,103 @@
 	      document.createElement('footer');
 	   </script>
 	<![endif]-->
+
 </head>
 <body>
 	<div class="header">
 		<div class="wrapper">
-			<div class="logo"></div>
+			<div class="logo"><span>DORMS<strong>DB</strong></span></div>
 			<div class="login">
 				<form action="#" id="login">
-					<div class="row">
-						<label for="email"></label>
+					<div class="col">
 						<input type="email" placeholder="Email">	
 					</div>
-					<div class="row">
-						<label for="passoword"></label>
-						<input type="password">	
+					<div class="col">
+						<input type="password" placeholder="Password">	
 					</div>	
+					<div class="col">
+						<input type="submit" value="login">
+					</div>
 				</form>
 			</div><!-- end login -->
 		</div><!-- end wrapper -->
 	</div><!-- end header -->
+	
+	<div class="body">
+		<section class="welcome">
+			<div class="wrapper">
+				<div class="left">
+					<h1>DORMS<strong>DB</strong><br></h1> 
+					<h2>is the easiest way to find your dorm room.</h2>
+					<a href="#" class="white btn searchbtn" data-target="#roomsearch">Search Now!</a>
+				</div>
+				<div class="right">
+					<div class="signupcontainer">
+						<div class="top"> <a href="#">Sign up</a> </div>
+						<div class="bottom">
+							<div class="form">
+								<form action="#">
+									<input type="text" placeholder="First Name"><br>
+									<input type="text" placeholder="Last Name"><br>
+									<input type="text" placeholder="Email Address"><br>
+									<input type="text" placeholder="Graduation Year"><br>
+									<input type="text" placeholder="Password"><br>
+									<input value="Submit" type="submit" >
+								</form>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div><!-- wrapper -->
+		</section>
+
+		<section class="room-search" id="roomsearch">
+				
+		</section>
+
+		<section class="intro">
+			<div class="wrapper">
+				<div class="left">
+					<h3>How can DORMSBP<br> help you?</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias adipisci et ratione dolorum. Alias adipisci et ratione dolorum.</p>
+				</div>
+				<div class="right">
+					<img src="img/intro.jpg" alt="">
+				</div>
+			</div>	
+		</section>
+
+		<section class="testimonial">
+			<div class="wrapper">
+				<div class="col">
+					<img src="img/yenny.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum facilis amet maiores consequatur doloremque esse aspernatur voluptate, rerum, delectus rem, veniam possimus sint minus perferendis! Quas vel a, quia soluta.</p>
+				</div>
+				<div class="col">
+					<img src="img/shivam.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum facilis amet maiores consequatur doloremque esse aspernatur voluptate, rerum, delectus rem, veniam possimus sint minus perferendis! Quas vel a, quia soluta.</p>
+				</div>
+				<div class="col">
+					<img src="img/alex.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum facilis amet maiores consequatur doloremque esse aspernatur voluptate, rerum, delectus rem, veniam possimus sint minus perferendis! Quas vel a, quia soluta.</p>
+				</div>
+			</div>	
+		</section>
+		
+	</div><!-- body -->
+
+	<div class="footer">
+		<div class="wrapper">
+			<div class="left">
+				<ul>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Statistics</a></li>
+				</ul>
+			</div>	
+			<div class="right">&copy; 2014 DORMS<strong>DB</strong>
+			</div>
+		</div>
+	</div><!-- end footer -->
 
 	<!-- JS INCLUDES -->
 	<script type="text/javascript" src="js/jquery.js"></script>

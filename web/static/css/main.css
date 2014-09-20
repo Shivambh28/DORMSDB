@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -388,8 +389,20 @@ body:before {
 
 /* INCLUDE FONTS */
 /* END INCLUDE FONTS */
-p, li, a, span {
-  font-size: 16px; }
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+h2 {
+  color: #999999; }
+
+h3 {
+  color: #666666;
+  font-size: 25px; }
+
+p {
+  color: #999999;
+  font-size: 18px; }
 
 a {
   text-decoration: none; }
@@ -403,8 +416,16 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html, body {
+  width: 100%;
+  height: 100%; }
+
 header, nav, section, article, aside, footer {
   display: block; }
+
+.container section {
+  width: 100%;
+  overflow: hidden; }
 
 .error {
   color: red !important;
@@ -418,6 +439,9 @@ header, nav, section, article, aside, footer {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 1024px) {
+    .wrapper {
+      width: 90%; } }
 
 form {
   width: 100%;
@@ -445,43 +469,224 @@ section.everythingcentered {
 .show {
   display: block; }
 
-.btn, input[type=submit] {
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 24px;
+input {
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px; }
+
+input[type="submit"] {
+  text-align: center;
   color: #fff;
-  padding: 18px 65px 21px;
-  box-shadow: 0 3px 0 #0b506f;
-  background: green;
+  border: 0;
+  text-transform: uppercase;
+  background: #498a70;
+  height: 60px; }
+  input[type="submit"]:hover {
+    background: #497a70; }
+
+.btn {
+  color: #498a70;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 20px;
   display: block;
-  border-radius: 4px;
-  float: left;
-  border-top: 1px solid #0AB55F;
-  margin-bottom: 8px; }
+  width: 200px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px; }
 
 .header {
   width: 100%;
-  height: 100px;
-  background: #ddd; }
+  background: white;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 0;
+  position: fixed;
+  top: 0; }
   .header .logo {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
+    width: 23.23176%;
     height: 50px;
-    float: left;
-    border: 1px solid red; }
+    float: left; }
     .header .logo:last-child {
       margin-right: 0; }
-  .header form {
+    .header .logo span {
+      color: #333;
+      font-weight: 100;
+      font-size: 25px;
+      margin-top: 15px;
+      display: block; }
+      .header .logo span strong {
+        font-size: inherit;
+        font-weight: 700;
+        color: #498a70; }
+  .header .login {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    margin-left: 17.05961%;
-    border: 1px solid red; }
-    .header form:last-child {
+    margin-left: 25.58941%;
+    margin-top: 10px; }
+    .header .login:last-child {
       margin-right: 0; }
+    .header .login form .col {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 30.11389%; }
+      .header .login form .col:last-child {
+        margin-right: 0; }
+    .header .login form input[type=submit] {
+      height: auto; }
+
+.footer {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  padding: 20px 0; }
+  .footer .left {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .footer .left:last-child {
+      margin-right: 0; }
+  .footer .right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 17.05961%;
+    text-align: right;
+    color: #666666; }
+    .footer .right:last-child {
+      margin-right: 0; }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
+      float: left;
+      margin-right: 20px; }
+      .footer ul li a {
+        color: #666666; }
+
+.body {
+  width: 100%;
+  overflow: hidden; }
+  .body section.welcome {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 150px;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover; }
+    .body section.welcome .left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-top: 100px;
+      margin-top: 140px; }
+      .body section.welcome .left:last-child {
+        margin-right: 0; }
+      .body section.welcome .left h1 {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 100;
+        margin-bottom: 0; }
+        .body section.welcome .left h1 strong {
+          font-size: inherit;
+          font-weight: 700; }
+      .body section.welcome .left h2 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 100; }
+    .body section.welcome .right {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 17.05961%;
+      margin-top: 160px; }
+      .body section.welcome .right:last-child {
+        margin-right: 0; }
+    .body section.welcome .btn {
+      margin-top: 20px; }
+    .body section.welcome .signupcontainer {
+      width: 350px;
+      background: rgba(255, 255, 255, 0.95);
+      float: right; }
+      .body section.welcome .signupcontainer .top {
+        height: 60px; }
+        .body section.welcome .signupcontainer .top a {
+          display: block;
+          text-transform: uppercase;
+          text-align: left;
+          line-height: 58px;
+          color: #498a70;
+          font-size: 15px;
+          padding-left: 20px;
+          font-size: 25px;
+          margin-top: 10px;
+          font-weight: 700; }
+        .body section.welcome .signupcontainer .top .left {
+          width: 50%;
+          float: left;
+          height: 100%;
+          border-right: 1px solid #fff; }
+        .body section.welcome .signupcontainer .top .right {
+          width: 50%;
+          float: left;
+          height: 100%;
+          background: #e6e7e8; }
+        .body section.welcome .signupcontainer .top .active {
+          background: #fff; }
+      .body section.welcome .signupcontainer .bottom {
+        padding: 20px; }
+  .body section.room-search {
+    height: 300px;
+    background: #eee; }
+  .body section.intro {
+    background: #fff; }
+    .body section.intro .wrapper {
+      padding: 100px 0; }
+      .body section.intro .wrapper .left {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        text-align: right;
+        margin-top: 120px; }
+        .body section.intro .wrapper .left:last-child {
+          margin-right: 0; }
+    .body section.intro .right {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-left: 8.5298%; }
+      .body section.intro .right:last-child {
+        margin-right: 0; }
+      .body section.intro .right img {
+        float: right;
+        width: 100%; }
+  .body section.testimonial {
+    background: #eee;
+    padding: 60px 0; }
+    .body section.testimonial .col {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      background: #fff; }
+      .body section.testimonial .col:last-child {
+        margin-right: 0; }
+      .body section.testimonial .col img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px; }
+      .body section.testimonial .col p {
+        text-align: center;
+        padding: 40px 20px 60px; }
 
 @media (max-width: 1024px) {
   .home .banner {
