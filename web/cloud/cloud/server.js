@@ -139,10 +139,10 @@ app.post('/search', function(req, res){
   var hallList = [];
   if(req.body.room!=""){
     console.log("searching based on room #", req.body.room);
-    roomQuery.equalTo("number", req.body.room);
+    roomQuery.equalTo("number", parseInt(req.body.room));
     roomQuery.find({
       success: function(rooms){
-        console.log(rooms);
+        console.log(req.body.room + rooms);
         res.json(rooms);
       }
     });
