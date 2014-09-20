@@ -1,0 +1,17 @@
+.header {
+	width:100%;
+	height:100px;
+	background:#ddd;
+	.logo {
+		@include span-columns(4);
+
+		height:50px;
+		float:left;
+		border:1px solid red;
+	}
+	form {
+		@include span-columns(6);
+		@include shift(2);
+		border:1px solid red;
+	}
+}
